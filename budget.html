@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+</head>
+<body>
+
+    <h1>Calculate your budget</h1>
+
+    <script>
+        function budget(phone, pc, camera) {
+            var mobile = phone*50;
+            var laptop = pc*100;
+            var dslr = camera*20;
+             
+            var total = mobile+laptop+dslr;
+            return total;
+        }
+
+        var result = budget(5, 2, 2);
+        document.write("Total Cost is: " + result);
+    </script>
+    
+</body>
+</html>

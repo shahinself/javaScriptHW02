@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make friend</title>
+</head>
+<body>
+
+    <h1>Make friend with javaScript </h1>
+
+    <script>
+        function nameList(array) {
+            var word = '';
+            for(var x=0; x<array.length; x++) {
+                if(word.length<array[x].length) {
+                         word=array[x];
+                }
+            }
+            return word;
+        }
+
+        var result = nameList(['shahin', 'alam', 'anwar', 'hossain', 'md']);
+        document.write("Your friend is: " +result);
+    </script>
+    
+</body>
+</html>
